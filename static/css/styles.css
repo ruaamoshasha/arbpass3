@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Bootstrap RTL Fixes */
+.form-control {
+  text-align: right;
+}
+
+/* Main Card */
+.main-card {
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+}
+
+.card-header {
+  border-bottom: none;
+  padding: 1.5rem;
+}
+
+/* Form Elements */
+.form-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#inputWord {
+  direction: rtl;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+}
+
+#submitBtn {
+  font-weight: bold;
+}
+
+/* Results */
+.results {
+  transition: all 0.3s ease;
+}
+
+.result-text {
+  font-size: 1.2rem;
+  direction: rtl;
+  word-wrap: break-word;
+  min-height: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.alert {
+  position: relative;
+  border-radius: 10px;
+}
+
+.copy-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .card-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .result-text {
+    font-size: 1rem;
+  }
+}
